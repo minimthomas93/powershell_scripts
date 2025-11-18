@@ -6,15 +6,12 @@
 
 #### Script:
 $system_ports = Get-NetTCPConnection -State Listen
-
 $my_ports = Get-Content -Path C:\Users\Administrator\Desktop\ports.txt
 
 foreach($port in $my_ports)
 {
 	If($port) -in $system_ports.LocalPort){
-	
 	echo $port
-	
 	} 
 }
 
@@ -59,4 +56,5 @@ Test-NetConnection -ComputerName $target -Port $i -InformationLevel "Detailed"
 
 <img width="676" height="607" alt="image" src="https://github.com/user-attachments/assets/47ade17a-8eb6-40ed-982b-8c60af9e33a8" />
 
+--------------------------------------------------------------------------------------------------------------------------------------------------
 Note: Path of files and folders are added for the purpose of learning. I have implemented and executed above challenges in the virtual box of TryHackMe Server. 
