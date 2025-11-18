@@ -1,4 +1,4 @@
-# powershell_scripts
+# Powershell Tasks
 
 ## Challenge 1: Find Listening Ports
 
@@ -42,3 +42,6 @@ Test-NetConnection -ComputerName $target -Port $i -InformationLevel "Detailed"
 }
 
 <img width="842" height="135" alt="image" src="https://github.com/user-attachments/assets/98c54389-43a2-4e76-a764-9b3ad3689076" />
+
+
+Note: Path of files and folders are added for the purpose of learning. I have implemented and executed above challenges in the virtual box of TryHackMe Server. 
