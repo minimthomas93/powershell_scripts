@@ -13,7 +13,7 @@ foreach($port in $my_ports)
 	If($port) -in $system_ports.LocalPort){
 	echo $port
 	} 
-}<img width="754" height="243" alt="image" src="https://github.com/user-attachments/assets/0566e6ab-0b39-4c30-aae6-e54b64ab21cc" />
+}
 
 
 ## Challenge 2: Find a file with password from multiple folders
@@ -25,7 +25,7 @@ $files = Get-ChildItem $path C:\Users\Administrator\Desktop\emails\*’  -recurs
 echo $files
 $https = ‘https'
 $https_files = Get-ChildItem $path C:\Users\Administrator\Desktop\emails\*’  -recurse | Select-String $https
-echo $https_files<img width="1066" height="289" alt="image" src="https://github.com/user-attachments/assets/81e48037-dbb2-44c5-ad1f-984fe17587a3" />
+echo $https_files
 
 
 ## Challenge 3: Simple port scanner using Powershell
@@ -41,7 +41,6 @@ for($i=130;$i -le 140;$i++)
 Test-NetConnection -ComputerName $target -Port $i -InformationLevel "Detailed"
 }
 
-<img width="842" height="135" alt="image" src="https://github.com/user-attachments/assets/98c54389-43a2-4e76-a764-9b3ad3689076" />
-
+<img width="676" height="607" alt="image" src="https://github.com/user-attachments/assets/47ade17a-8eb6-40ed-982b-8c60af9e33a8" />
 
 Note: Path of files and folders are added for the purpose of learning. I have implemented and executed above challenges in the virtual box of TryHackMe Server. 
